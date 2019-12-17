@@ -1,0 +1,949 @@
+2019-12-17 16:21:18.816  INFO 66112 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.2.1.1
+	Build:          828
+	Build time:     31.07.2019 11:02:24 CEST
+	Branch          master
+	Commit:         d9c9aa0
+	Commit time:    31.07.2019 10:59:59 CEST
+	JVM:            1.8.0_231
+	Lavaplayer      1.3.19
+
+2019-12-17 16:21:18.987  INFO 66112 --- [main] o.s.boot.SpringApplication               : [32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[39m    =========================================[32m/_/_/_/
+
+[32m    :: Lavalink    :: [39m      
+[32m    :: Spring Boot :: [39m       (v2.0.4.RELEASE)
+
+
+2019-12-17 16:21:19.339  INFO 66112 --- [main] lavalink.server.Launcher                 : Starting Launcher on iMac.local with PID 66112 (/Users/noire/Desktop/Axiro-ALT/Lavalink.jar started by noire in /Users/noire/Desktop/Axiro-ALT)
+2019-12-17 16:21:19.348  INFO 66112 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-12-17 16:21:19.407  WARN 66112 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-12-17 16:21:19.490  INFO 66112 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59a6e353: startup date [Tue Dec 17 16:21:19 EST 2019]; root of context hierarchy
+2019-12-17 16:21:22.383  INFO 66112 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-17 16:21:22.449  INFO 66112 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-17 16:21:23.348  WARN 66112 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-17 16:21:23.355  WARN 66112 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-17 16:21:23.403  INFO 66112 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-17 16:21:23.404  INFO 66112 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3914 ms
+2019-12-17 16:21:23.551  INFO 66112 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-17 16:21:23.561  INFO 66112 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-17 16:21:23.563  INFO 66112 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-17 16:21:23.563  INFO 66112 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-17 16:21:23.564  INFO 66112 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-17 16:21:23.564  INFO 66112 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-12-17 16:21:23.710  WARN 66112 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-12-17 16:21:23.733  INFO 66112 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Mac OS X, Arch: x86_64
+2019-12-17 16:21:23.733  WARN 66112 --- [main] l.s.c.AudioSendFactoryConfiguration      : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2019-12-17 16:21:25.682  INFO 66112 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-12-17 16:21:25.843  INFO 66112 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-12-17 16:21:26.267  INFO 66112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:21:26.727  INFO 66112 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59a6e353: startup date [Tue Dec 17 16:21:19 EST 2019]; root of context hierarchy
+2019-12-17 16:21:26.898  INFO 66112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-12-17 16:21:26.901  INFO 66112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:21:26.902  INFO 66112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:21:26.905  INFO 66112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String lavalink.server.info.InfoRestHandler.version()
+2019-12-17 16:21:26.910  INFO 66112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-17 16:21:26.911  INFO 66112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-17 16:21:26.981  INFO 66112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:21:26.981  INFO 66112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:21:27.746  INFO 66112 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-12-17 16:21:27.767  INFO 66112 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-12-17 16:21:27.956  INFO 66112 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 1983 (http) with context path ''
+2019-12-17 16:21:27.964  INFO 66112 --- [main] lavalink.server.Launcher                 : Started Launcher in 10.57 seconds (JVM running for 13.079)
+2019-12-17 16:26:26.518  INFO 66112 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-17 16:26:26.519  INFO 66112 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-17 16:26:26.567  INFO 66112 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2019-12-17 16:26:26.625  INFO 66112 --- [XNIO-2 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:63425
+2019-12-17 16:26:26.773  INFO 66112 --- [XNIO-2 task-1] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-12-17 16:26:26.947  INFO 66112 --- [XNIO-2 task-1] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:63425
+2019-12-17 16:26:26.995  INFO 66112 --- [XNIO-2 I/O-3] lavalink.server.io.SocketServer          : {"op": "configureResuming", "key": "default-node", "timeout": 60}
+2019-12-17 16:28:54.556  INFO 66112 --- [XNIO-2 task-2] l.server.player.AudioLoaderRestHandler   : GET /loadtracks
+2019-12-17 16:28:54.616  INFO 66112 --- [XNIO-2 I/O-3] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "647250888955658262", "sessionId": "674d0200a8b6b6ba43f7b53a1ee86c8a", "event": {"token": "abd0696bb60f6b25", "guild_id": "647250888955658262", "endpoint": "us-east698.discord.media:80"}}
+2019-12-17 16:28:56.213  INFO 66112 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: ChickenFucker
+2019-12-17 16:28:56.494  INFO 66112 --- [XNIO-2 I/O-3] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "647250888955658262", "track": "QAAApAIAQFRoZSBEZXZpbCdzIFJlamVjdHMgKDkvMTApIE1vdmllIENMSVAgLSBDaGlja2VuIEYqKiplciAoMjAwNSkgSEQACk1vdmllY2xpcHMAAAAAAAJGCAALdWpFYmVqZXBoTk0AAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj11akViZWplcGhOTQAHeW91dHViZQAAAAAAAAAA", "startTime": 0}
+2019-12-17 16:28:56.563 ERROR 66112 --- [parallel-3] reactor.core.scheduler.Schedulers        : Scheduler worker in group main failed with an uncaught exception
+
+java.lang.UnsatisfiedLinkError: Required library at /natives/darwin/libudpqueue.dylib was not found
+	at com.sedmelluq.discord.lavaplayer.natives.NativeLibLoader.extractLibrary(NativeLibLoader.java:93) ~[lavaplayer-common-1.0.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.natives.NativeLibLoader.load(NativeLibLoader.java:77) ~[lavaplayer-common-1.0.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.udpqueue.natives.UdpQueueManagerLibrary.getInstance(UdpQueueManagerLibrary.java:13) ~[udp-queue-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.udpqueue.natives.UdpQueueManager.<init>(UdpQueueManager.java:27) ~[udp-queue-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.initialiseQueueManager(NativeAudioSendFactory.java:40) ~[jda-nas-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.addInstance(NativeAudioSendFactory.java:69) ~[jda-nas-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendSystem.start(NativeAudioSendSystem.java:22) ~[jda-nas-1.0.6.jar!/:na]
+	at com.github.shredder121.asyncaudio.jda.AsyncAudioSendSystemWrapper.start(AsyncAudioSendSystemWrapper.java:37) ~[jda-async-packetprovider-1.3.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.startSendSystemIfReady(AudioConnection.java:312) ~[magma-0.9.0.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.handleSendHandlerUpdate(AudioConnection.java:229) ~[magma-0.9.0.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.hookOnNext(AudioConnection.java:214) ~[magma-0.9.0.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.hookOnNext(AudioConnection.java:58) ~[magma-0.9.0.jar!/:na]
+	at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:158) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:398) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:484) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84) [reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37) [reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_231]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_231]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_231]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_231]
+
+2019-12-17 16:29:21.967  INFO 66112 --- [Thread-2] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59a6e353: startup date [Tue Dec 17 16:21:19 EST 2019]; root of context hierarchy
+2019-12-17 16:29:21.977  INFO 66112 --- [Thread-2] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-12-17 16:29:21.979  INFO 66112 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-12-17 16:29:21.981  INFO 66112 --- [Thread-2] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-12-17 16:29:21.986  INFO 66112 --- [Thread-2] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-12-17 16:29:21.997 ERROR 66112 --- [XNIO-2 I/O-3] org.xnio.listener                        : XNIO001007: A channel event listener threw an exception
+
+java.util.concurrent.RejectedExecutionException: XNIO007007: Thread is terminating
+	at org.xnio.nio.WorkerThread.execute(WorkerThread.java:590) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.websockets.jsr.UndertowSession$3.handleEvent(UndertowSession.java:396) ~[undertow-websockets-jsr-1.4.25.Final.jar!/:1.4.25.Final]
+	at io.undertow.websockets.jsr.UndertowSession$3.handleEvent(UndertowSession.java:388) ~[undertow-websockets-jsr-1.4.25.Final.jar!/:1.4.25.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.server.protocol.framed.AbstractFramedChannel$FrameCloseListener.handleEvent(AbstractFramedChannel.java:1061) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at io.undertow.server.protocol.framed.AbstractFramedChannel$FrameCloseListener.handleEvent(AbstractFramedChannel.java:975) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.conduits.WriteReadyHandler$ChannelListenerHandler.terminated(WriteReadyHandler.java:70) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.writeTerminated(NioSocketConduit.java:234) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.terminateWrites(NioSocketConduit.java:223) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.truncateWrites(NioSocketConduit.java:228) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.conduits.IdleTimeoutConduit.truncateWrites(IdleTimeoutConduit.java:387) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at org.xnio.conduits.ConduitStreamSinkChannel.close(ConduitStreamSinkChannel.java:186) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.IoUtils.safeClose(IoUtils.java:134) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.conduits.WriteReadyHandler$ChannelListenerHandler.forceTermination(WriteReadyHandler.java:57) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.forceTermination(NioSocketConduit.java:107) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:494) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+
+2019-12-17 16:29:25.811  INFO 66402 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.2.1.1
+	Build:          828
+	Build time:     31.07.2019 11:02:24 CEST
+	Branch          master
+	Commit:         d9c9aa0
+	Commit time:    31.07.2019 10:59:59 CEST
+	JVM:            1.8.0_231
+	Lavaplayer      1.3.19
+
+2019-12-17 16:29:25.972  INFO 66402 --- [main] o.s.boot.SpringApplication               : [32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[39m    =========================================[32m/_/_/_/
+
+[32m    :: Lavalink    :: [39m      
+[32m    :: Spring Boot :: [39m       (v2.0.4.RELEASE)
+
+
+2019-12-17 16:29:26.250  INFO 66402 --- [main] lavalink.server.Launcher                 : Starting Launcher on iMac.local with PID 66402 (/Users/noire/Desktop/Axiro-ALT/Lavalink.jar started by noire in /Users/noire/Desktop/Axiro-ALT)
+2019-12-17 16:29:26.252  INFO 66402 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-12-17 16:29:26.446  INFO 66402 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59a6e353: startup date [Tue Dec 17 16:29:26 EST 2019]; root of context hierarchy
+2019-12-17 16:29:26.647  WARN 66402 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-12-17 16:29:28.955  INFO 66402 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-17 16:29:28.992  INFO 66402 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-17 16:29:29.157  WARN 66402 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-17 16:29:29.157  WARN 66402 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-17 16:29:29.203  INFO 66402 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-17 16:29:29.208  INFO 66402 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2758 ms
+2019-12-17 16:29:29.331  INFO 66402 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-17 16:29:29.341  INFO 66402 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-17 16:29:29.343  INFO 66402 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-17 16:29:29.343  INFO 66402 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-17 16:29:29.344  INFO 66402 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-17 16:29:29.344  INFO 66402 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-12-17 16:29:29.452  WARN 66402 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-12-17 16:29:29.478  INFO 66402 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Mac OS X, Arch: x86_64
+2019-12-17 16:29:29.478  WARN 66402 --- [main] l.s.c.AudioSendFactoryConfiguration      : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2019-12-17 16:29:30.692  INFO 66402 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-12-17 16:29:30.857  INFO 66402 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-12-17 16:29:31.247  INFO 66402 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:29:31.709  INFO 66402 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59a6e353: startup date [Tue Dec 17 16:29:26 EST 2019]; root of context hierarchy
+2019-12-17 16:29:31.890  INFO 66402 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-12-17 16:29:31.893  INFO 66402 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:29:31.894  INFO 66402 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:29:31.895  INFO 66402 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String lavalink.server.info.InfoRestHandler.version()
+2019-12-17 16:29:31.901  INFO 66402 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-17 16:29:31.901  INFO 66402 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-17 16:29:31.969  INFO 66402 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:29:31.971  INFO 66402 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:29:32.680  INFO 66402 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-12-17 16:29:32.699  INFO 66402 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-12-17 16:29:32.844  INFO 66402 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 1983 (http) with context path ''
+2019-12-17 16:29:32.853  INFO 66402 --- [main] lavalink.server.Launcher                 : Started Launcher in 7.933 seconds (JVM running for 9.027)
+2019-12-17 16:29:44.470  INFO 66402 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-17 16:29:44.472  INFO 66402 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-17 16:29:44.522  INFO 66402 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2019-12-17 16:29:44.607  INFO 66402 --- [XNIO-2 task-1] l.server.player.AudioLoaderRestHandler   : GET /loadtracks
+2019-12-17 16:29:45.956  INFO 66402 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: ChickenFucker
+2019-12-17 16:29:52.024  INFO 66402 --- [XNIO-2 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:63487
+2019-12-17 16:29:52.116  INFO 66402 --- [XNIO-2 task-3] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-12-17 16:29:52.236  INFO 66402 --- [XNIO-2 task-3] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:63487
+2019-12-17 16:29:52.279  INFO 66402 --- [XNIO-2 I/O-1] lavalink.server.io.SocketServer          : {"op": "destroy", "guildId": "647250888955658262"}
+2019-12-17 16:29:52.305  INFO 66402 --- [XNIO-2 I/O-1] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "647250888955658262", "sessionId": "674d0200a8b6b6ba43f7b53a1ee86c8a", "event": {"token": "abd0696bb60f6b25", "guild_id": "647250888955658262", "endpoint": "us-east698.discord.media:80"}}
+2019-12-17 16:29:52.315  INFO 66402 --- [XNIO-2 I/O-1] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "647250888955658262", "track": "QAAApAIAQFRoZSBEZXZpbCdzIFJlamVjdHMgKDkvMTApIE1vdmllIENMSVAgLSBDaGlja2VuIEYqKiplciAoMjAwNSkgSEQACk1vdmllY2xpcHMAAAAAAAJGCAALdWpFYmVqZXBoTk0AAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj11akViZWplcGhOTQAHeW91dHViZQAAAAAAAAAA", "startTime": 30970.73779296875}
+2019-12-17 16:29:53.124 ERROR 66402 --- [parallel-3] reactor.core.scheduler.Schedulers        : Scheduler worker in group main failed with an uncaught exception
+
+java.lang.UnsatisfiedLinkError: Required library at /natives/darwin/libudpqueue.dylib was not found
+	at com.sedmelluq.discord.lavaplayer.natives.NativeLibLoader.extractLibrary(NativeLibLoader.java:93) ~[lavaplayer-common-1.0.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.natives.NativeLibLoader.load(NativeLibLoader.java:77) ~[lavaplayer-common-1.0.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.udpqueue.natives.UdpQueueManagerLibrary.getInstance(UdpQueueManagerLibrary.java:13) ~[udp-queue-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.udpqueue.natives.UdpQueueManager.<init>(UdpQueueManager.java:27) ~[udp-queue-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.initialiseQueueManager(NativeAudioSendFactory.java:40) ~[jda-nas-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.addInstance(NativeAudioSendFactory.java:69) ~[jda-nas-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendSystem.start(NativeAudioSendSystem.java:22) ~[jda-nas-1.0.6.jar!/:na]
+	at com.github.shredder121.asyncaudio.jda.AsyncAudioSendSystemWrapper.start(AsyncAudioSendSystemWrapper.java:37) ~[jda-async-packetprovider-1.3.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.startSendSystemIfReady(AudioConnection.java:312) ~[magma-0.9.0.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.hookOnNext(AudioConnection.java:203) ~[magma-0.9.0.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.hookOnNext(AudioConnection.java:58) ~[magma-0.9.0.jar!/:na]
+	at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:158) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:398) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:484) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84) [reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37) [reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_231]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_231]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_231]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_231]
+
+2019-12-17 16:30:33.430  INFO 66402 --- [Thread-2] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59a6e353: startup date [Tue Dec 17 16:29:26 EST 2019]; root of context hierarchy
+2019-12-17 16:30:33.434  INFO 66402 --- [Thread-2] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-12-17 16:30:33.436  INFO 66402 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-12-17 16:30:33.438  INFO 66402 --- [Thread-2] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-12-17 16:30:33.444  INFO 66402 --- [Thread-2] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-12-17 16:30:33.455 ERROR 66402 --- [XNIO-2 I/O-1] org.xnio.listener                        : XNIO001007: A channel event listener threw an exception
+
+java.util.concurrent.RejectedExecutionException: XNIO007007: Thread is terminating
+	at org.xnio.nio.WorkerThread.execute(WorkerThread.java:590) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.websockets.jsr.UndertowSession$3.handleEvent(UndertowSession.java:396) ~[undertow-websockets-jsr-1.4.25.Final.jar!/:1.4.25.Final]
+	at io.undertow.websockets.jsr.UndertowSession$3.handleEvent(UndertowSession.java:388) ~[undertow-websockets-jsr-1.4.25.Final.jar!/:1.4.25.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.server.protocol.framed.AbstractFramedChannel$FrameCloseListener.handleEvent(AbstractFramedChannel.java:1061) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at io.undertow.server.protocol.framed.AbstractFramedChannel$FrameCloseListener.handleEvent(AbstractFramedChannel.java:975) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.conduits.WriteReadyHandler$ChannelListenerHandler.terminated(WriteReadyHandler.java:70) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.writeTerminated(NioSocketConduit.java:234) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.terminateWrites(NioSocketConduit.java:223) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.truncateWrites(NioSocketConduit.java:228) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.conduits.IdleTimeoutConduit.truncateWrites(IdleTimeoutConduit.java:387) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at org.xnio.conduits.ConduitStreamSinkChannel.close(ConduitStreamSinkChannel.java:186) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.IoUtils.safeClose(IoUtils.java:134) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.conduits.WriteReadyHandler$ChannelListenerHandler.forceTermination(WriteReadyHandler.java:57) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.forceTermination(NioSocketConduit.java:107) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:494) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+
+2019-12-17 16:34:13.597  INFO 66459 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.2.1.1
+	Build:          828
+	Build time:     31.07.2019 11:02:24 CEST
+	Branch          master
+	Commit:         d9c9aa0
+	Commit time:    31.07.2019 10:59:59 CEST
+	JVM:            1.8.0_231
+	Lavaplayer      1.3.19
+
+2019-12-17 16:34:13.705  INFO 66459 --- [main] o.s.boot.SpringApplication               : [32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[39m    =========================================[32m/_/_/_/
+
+[32m    :: Lavalink    :: [39m      
+[32m    :: Spring Boot :: [39m       (v2.0.4.RELEASE)
+
+
+2019-12-17 16:34:13.993  INFO 66459 --- [main] lavalink.server.Launcher                 : Starting Launcher on iMac.local with PID 66459 (/Users/noire/Desktop/Axiro-ALT/Lavalink.jar started by noire in /Users/noire/Desktop/Axiro-ALT)
+2019-12-17 16:34:13.995  INFO 66459 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-12-17 16:34:14.059  WARN 66459 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-12-17 16:34:14.144  INFO 66459 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Tue Dec 17 16:34:14 EST 2019]; root of context hierarchy
+2019-12-17 16:34:16.631  INFO 66459 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-17 16:34:16.683  INFO 66459 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-17 16:34:16.853  WARN 66459 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-17 16:34:16.853  WARN 66459 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-17 16:34:16.899  INFO 66459 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-17 16:34:16.904  INFO 66459 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2756 ms
+2019-12-17 16:34:17.030  INFO 66459 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-17 16:34:17.039  INFO 66459 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-17 16:34:17.041  INFO 66459 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-17 16:34:17.041  INFO 66459 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-17 16:34:17.042  INFO 66459 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-17 16:34:17.042  INFO 66459 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-12-17 16:34:17.157  WARN 66459 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-12-17 16:34:17.174  INFO 66459 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Mac OS X, Arch: x86_64
+2019-12-17 16:34:17.175  WARN 66459 --- [main] l.s.c.AudioSendFactoryConfiguration      : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2019-12-17 16:34:18.421  INFO 66459 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-12-17 16:34:18.617  INFO 66459 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-12-17 16:34:19.042  INFO 66459 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:34:19.519  INFO 66459 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Tue Dec 17 16:34:14 EST 2019]; root of context hierarchy
+2019-12-17 16:34:19.715  INFO 66459 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-12-17 16:34:19.719  INFO 66459 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:34:19.720  INFO 66459 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:34:19.722  INFO 66459 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String lavalink.server.info.InfoRestHandler.version()
+2019-12-17 16:34:19.735  INFO 66459 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-17 16:34:19.739  INFO 66459 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-17 16:34:19.823  INFO 66459 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:34:19.824  INFO 66459 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:34:20.521  INFO 66459 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-12-17 16:34:20.541  INFO 66459 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-12-17 16:34:20.690  INFO 66459 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 1983 (http) with context path ''
+2019-12-17 16:34:20.703  INFO 66459 --- [main] lavalink.server.Launcher                 : Started Launcher in 8.195 seconds (JVM running for 9.245)
+2019-12-17 16:34:33.430  INFO 66459 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-17 16:34:33.432  INFO 66459 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-17 16:34:33.471  INFO 66459 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+2019-12-17 16:34:33.526  INFO 66459 --- [XNIO-2 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:63564
+2019-12-17 16:34:33.661  INFO 66459 --- [XNIO-2 task-1] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-12-17 16:34:33.806  INFO 66459 --- [XNIO-2 task-1] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:63564
+2019-12-17 16:34:33.844  INFO 66459 --- [XNIO-2 I/O-2] lavalink.server.io.SocketServer          : {"op": "configureResuming", "key": "default-node", "timeout": 60}
+2019-12-17 16:34:53.399  INFO 66459 --- [XNIO-2 task-2] l.server.player.AudioLoaderRestHandler   : GET /loadtracks
+2019-12-17 16:34:53.457  INFO 66459 --- [XNIO-2 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "647250888955658262", "sessionId": "b376e651e0c5dc4d79086524d6fe735b", "event": {"token": "bb9b62f6f210361e", "guild_id": "647250888955658262", "endpoint": "us-east698.discord.media:80"}}
+2019-12-17 16:34:54.641  INFO 66459 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: ChickenFucker
+2019-12-17 16:35:00.914  INFO 66459 --- [XNIO-2 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "647250888955658262", "track": "QAAApAIAQFRoZSBEZXZpbCdzIFJlamVjdHMgKDkvMTApIE1vdmllIENMSVAgLSBDaGlja2VuIEYqKiplciAoMjAwNSkgSEQACk1vdmllY2xpcHMAAAAAAAJGCAALdWpFYmVqZXBoTk0AAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj11akViZWplcGhOTQAHeW91dHViZQAAAAAAAAAA", "startTime": 0}
+2019-12-17 16:35:00.982 ERROR 66459 --- [parallel-3] reactor.core.scheduler.Schedulers        : Scheduler worker in group main failed with an uncaught exception
+
+java.lang.UnsatisfiedLinkError: Required library at /natives/darwin/libudpqueue.dylib was not found
+	at com.sedmelluq.discord.lavaplayer.natives.NativeLibLoader.extractLibrary(NativeLibLoader.java:93) ~[lavaplayer-common-1.0.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.natives.NativeLibLoader.load(NativeLibLoader.java:77) ~[lavaplayer-common-1.0.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.udpqueue.natives.UdpQueueManagerLibrary.getInstance(UdpQueueManagerLibrary.java:13) ~[udp-queue-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.udpqueue.natives.UdpQueueManager.<init>(UdpQueueManager.java:27) ~[udp-queue-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.initialiseQueueManager(NativeAudioSendFactory.java:40) ~[jda-nas-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.addInstance(NativeAudioSendFactory.java:69) ~[jda-nas-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendSystem.start(NativeAudioSendSystem.java:22) ~[jda-nas-1.0.6.jar!/:na]
+	at com.github.shredder121.asyncaudio.jda.AsyncAudioSendSystemWrapper.start(AsyncAudioSendSystemWrapper.java:37) ~[jda-async-packetprovider-1.3.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.startSendSystemIfReady(AudioConnection.java:312) ~[magma-0.9.0.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.handleSendHandlerUpdate(AudioConnection.java:229) ~[magma-0.9.0.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.hookOnNext(AudioConnection.java:214) ~[magma-0.9.0.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.hookOnNext(AudioConnection.java:58) ~[magma-0.9.0.jar!/:na]
+	at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:158) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:398) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:484) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84) [reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37) [reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_231]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_231]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_231]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_231]
+
+2019-12-17 16:35:21.307  INFO 66459 --- [Thread-2] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Tue Dec 17 16:34:14 EST 2019]; root of context hierarchy
+2019-12-17 16:35:21.312  INFO 66459 --- [Thread-2] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-12-17 16:35:21.313  INFO 66459 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-12-17 16:35:21.315  INFO 66459 --- [Thread-2] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-12-17 16:35:21.322  INFO 66459 --- [Thread-2] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-12-17 16:35:21.342 ERROR 66459 --- [XNIO-2 I/O-2] org.xnio.listener                        : XNIO001007: A channel event listener threw an exception
+
+java.util.concurrent.RejectedExecutionException: XNIO007007: Thread is terminating
+	at org.xnio.nio.WorkerThread.execute(WorkerThread.java:590) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.websockets.jsr.UndertowSession$3.handleEvent(UndertowSession.java:396) ~[undertow-websockets-jsr-1.4.25.Final.jar!/:1.4.25.Final]
+	at io.undertow.websockets.jsr.UndertowSession$3.handleEvent(UndertowSession.java:388) ~[undertow-websockets-jsr-1.4.25.Final.jar!/:1.4.25.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.server.protocol.framed.AbstractFramedChannel$FrameCloseListener.handleEvent(AbstractFramedChannel.java:1061) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at io.undertow.server.protocol.framed.AbstractFramedChannel$FrameCloseListener.handleEvent(AbstractFramedChannel.java:975) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.conduits.WriteReadyHandler$ChannelListenerHandler.terminated(WriteReadyHandler.java:70) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.writeTerminated(NioSocketConduit.java:234) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.terminateWrites(NioSocketConduit.java:223) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.truncateWrites(NioSocketConduit.java:228) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.conduits.IdleTimeoutConduit.truncateWrites(IdleTimeoutConduit.java:387) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at org.xnio.conduits.ConduitStreamSinkChannel.close(ConduitStreamSinkChannel.java:186) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.IoUtils.safeClose(IoUtils.java:134) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.conduits.WriteReadyHandler$ChannelListenerHandler.forceTermination(WriteReadyHandler.java:57) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.forceTermination(NioSocketConduit.java:107) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:494) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+
+2019-12-17 16:35:31.414  INFO 66493 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.2.1.1
+	Build:          828
+	Build time:     31.07.2019 11:02:24 CEST
+	Branch          master
+	Commit:         d9c9aa0
+	Commit time:    31.07.2019 10:59:59 CEST
+	JVM:            1.8.0_231
+	Lavaplayer      1.3.19
+
+2019-12-17 16:35:31.561  INFO 66493 --- [main] o.s.boot.SpringApplication               : [32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[39m    =========================================[32m/_/_/_/
+
+[32m    :: Lavalink    :: [39m      
+[32m    :: Spring Boot :: [39m       (v2.0.4.RELEASE)
+
+
+2019-12-17 16:35:31.822  INFO 66493 --- [main] lavalink.server.Launcher                 : Starting Launcher on iMac.local with PID 66493 (/Users/noire/Desktop/Axiro-ALT/Lavalink.jar started by root in /Users/noire/Desktop/Axiro-ALT)
+2019-12-17 16:35:31.824  INFO 66493 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-12-17 16:35:31.974  INFO 66493 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Tue Dec 17 16:35:31 EST 2019]; root of context hierarchy
+2019-12-17 16:35:32.145  WARN 66493 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-12-17 16:35:34.487  INFO 66493 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-17 16:35:34.524  INFO 66493 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-17 16:35:34.703  WARN 66493 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-17 16:35:34.704  WARN 66493 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-17 16:35:34.756  INFO 66493 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-17 16:35:34.761  INFO 66493 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2784 ms
+2019-12-17 16:35:34.897  INFO 66493 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-17 16:35:34.908  INFO 66493 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-17 16:35:34.910  INFO 66493 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-17 16:35:34.910  INFO 66493 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-17 16:35:34.910  INFO 66493 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-17 16:35:34.911  INFO 66493 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-12-17 16:35:35.026  WARN 66493 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-12-17 16:35:35.041  INFO 66493 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Mac OS X, Arch: x86_64
+2019-12-17 16:35:35.042  WARN 66493 --- [main] l.s.c.AudioSendFactoryConfiguration      : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2019-12-17 16:35:36.326  INFO 66493 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-12-17 16:35:36.488  INFO 66493 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-12-17 16:35:36.856  INFO 66493 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:35:37.327  INFO 66493 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Tue Dec 17 16:35:31 EST 2019]; root of context hierarchy
+2019-12-17 16:35:37.535  INFO 66493 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-12-17 16:35:37.538  INFO 66493 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:35:37.540  INFO 66493 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:35:37.546  INFO 66493 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String lavalink.server.info.InfoRestHandler.version()
+2019-12-17 16:35:37.565  INFO 66493 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-17 16:35:37.566  INFO 66493 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-17 16:35:37.662  INFO 66493 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:35:37.668  INFO 66493 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:35:38.471  INFO 66493 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-12-17 16:35:38.488  INFO 66493 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-12-17 16:35:38.638  INFO 66493 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 1983 (http) with context path ''
+2019-12-17 16:35:38.648  INFO 66493 --- [main] lavalink.server.Launcher                 : Started Launcher in 8.11 seconds (JVM running for 9.164)
+2019-12-17 16:35:49.180  INFO 66493 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-17 16:35:49.181  INFO 66493 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-17 16:35:49.217  INFO 66493 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2019-12-17 16:35:49.263  INFO 66493 --- [XNIO-2 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:63582
+2019-12-17 16:35:49.377  INFO 66493 --- [XNIO-2 task-1] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-12-17 16:35:49.512  INFO 66493 --- [XNIO-2 task-1] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:63582
+2019-12-17 16:35:49.549  INFO 66493 --- [XNIO-2 I/O-4] lavalink.server.io.SocketServer          : {"op": "configureResuming", "key": "default-node", "timeout": 60}
+2019-12-17 16:36:06.467  INFO 66493 --- [XNIO-2 task-2] l.server.player.AudioLoaderRestHandler   : GET /loadtracks
+2019-12-17 16:36:06.531  INFO 66493 --- [XNIO-2 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "647250888955658262", "sessionId": "296538965a89a35aeba0b4c8ee4ff223", "event": {"token": "a42557f329e2c87d", "guild_id": "647250888955658262", "endpoint": "us-east698.discord.media:80"}}
+2019-12-17 16:36:07.739  INFO 66493 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: ChickenFucker
+2019-12-17 16:36:08.243  INFO 66493 --- [XNIO-2 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "647250888955658262", "track": "QAAApAIAQFRoZSBEZXZpbCdzIFJlamVjdHMgKDkvMTApIE1vdmllIENMSVAgLSBDaGlja2VuIEYqKiplciAoMjAwNSkgSEQACk1vdmllY2xpcHMAAAAAAAJGCAALdWpFYmVqZXBoTk0AAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj11akViZWplcGhOTQAHeW91dHViZQAAAAAAAAAA", "startTime": 0}
+2019-12-17 16:36:08.293 ERROR 66493 --- [parallel-3] reactor.core.scheduler.Schedulers        : Scheduler worker in group main failed with an uncaught exception
+
+java.lang.UnsatisfiedLinkError: Required library at /natives/darwin/libudpqueue.dylib was not found
+	at com.sedmelluq.discord.lavaplayer.natives.NativeLibLoader.extractLibrary(NativeLibLoader.java:93) ~[lavaplayer-common-1.0.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.natives.NativeLibLoader.load(NativeLibLoader.java:77) ~[lavaplayer-common-1.0.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.udpqueue.natives.UdpQueueManagerLibrary.getInstance(UdpQueueManagerLibrary.java:13) ~[udp-queue-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.udpqueue.natives.UdpQueueManager.<init>(UdpQueueManager.java:27) ~[udp-queue-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.initialiseQueueManager(NativeAudioSendFactory.java:40) ~[jda-nas-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.addInstance(NativeAudioSendFactory.java:69) ~[jda-nas-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendSystem.start(NativeAudioSendSystem.java:22) ~[jda-nas-1.0.6.jar!/:na]
+	at com.github.shredder121.asyncaudio.jda.AsyncAudioSendSystemWrapper.start(AsyncAudioSendSystemWrapper.java:37) ~[jda-async-packetprovider-1.3.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.startSendSystemIfReady(AudioConnection.java:312) ~[magma-0.9.0.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.handleSendHandlerUpdate(AudioConnection.java:229) ~[magma-0.9.0.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.hookOnNext(AudioConnection.java:214) ~[magma-0.9.0.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.hookOnNext(AudioConnection.java:58) ~[magma-0.9.0.jar!/:na]
+	at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:158) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:398) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:484) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84) [reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37) [reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_231]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_231]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_231]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_231]
+
+2019-12-17 16:45:38.516  INFO 66493 --- [Thread-2] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Tue Dec 17 16:35:31 EST 2019]; root of context hierarchy
+2019-12-17 16:45:38.520  INFO 66493 --- [Thread-2] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-12-17 16:45:38.521  INFO 66493 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-12-17 16:45:38.524  INFO 66493 --- [Thread-2] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-12-17 16:45:38.529  INFO 66493 --- [Thread-2] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-12-17 16:45:38.537 ERROR 66493 --- [XNIO-2 I/O-4] org.xnio.listener                        : XNIO001007: A channel event listener threw an exception
+
+java.util.concurrent.RejectedExecutionException: XNIO007007: Thread is terminating
+	at org.xnio.nio.WorkerThread.execute(WorkerThread.java:590) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.websockets.jsr.UndertowSession$3.handleEvent(UndertowSession.java:396) ~[undertow-websockets-jsr-1.4.25.Final.jar!/:1.4.25.Final]
+	at io.undertow.websockets.jsr.UndertowSession$3.handleEvent(UndertowSession.java:388) ~[undertow-websockets-jsr-1.4.25.Final.jar!/:1.4.25.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.server.protocol.framed.AbstractFramedChannel$FrameCloseListener.handleEvent(AbstractFramedChannel.java:1061) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at io.undertow.server.protocol.framed.AbstractFramedChannel$FrameCloseListener.handleEvent(AbstractFramedChannel.java:975) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.conduits.WriteReadyHandler$ChannelListenerHandler.terminated(WriteReadyHandler.java:70) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.writeTerminated(NioSocketConduit.java:234) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.terminateWrites(NioSocketConduit.java:223) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.truncateWrites(NioSocketConduit.java:228) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.conduits.IdleTimeoutConduit.truncateWrites(IdleTimeoutConduit.java:387) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at org.xnio.conduits.ConduitStreamSinkChannel.close(ConduitStreamSinkChannel.java:186) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.IoUtils.safeClose(IoUtils.java:134) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.conduits.WriteReadyHandler$ChannelListenerHandler.forceTermination(WriteReadyHandler.java:57) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.forceTermination(NioSocketConduit.java:107) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:494) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+
+2019-12-17 16:45:44.764  INFO 66633 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.2.1.1
+	Build:          828
+	Build time:     31.07.2019 11:02:24 CEST
+	Branch          master
+	Commit:         d9c9aa0
+	Commit time:    31.07.2019 10:59:59 CEST
+	JVM:            1.8.0_231
+	Lavaplayer      1.3.19
+
+2019-12-17 16:45:44.864  INFO 66633 --- [main] o.s.boot.SpringApplication               : [32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[39m    =========================================[32m/_/_/_/
+
+[32m    :: Lavalink    :: [39m      
+[32m    :: Spring Boot :: [39m       (v2.0.4.RELEASE)
+
+
+2019-12-17 16:45:45.140  INFO 66633 --- [main] lavalink.server.Launcher                 : Starting Launcher on iMac.local with PID 66633 (/Users/noire/Desktop/Axiro-ALT/Lavalink.jar started by root in /Users/noire/Desktop/Axiro-ALT)
+2019-12-17 16:45:45.143  INFO 66633 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-12-17 16:45:45.295  WARN 66633 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-12-17 16:45:45.303  INFO 66633 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59a6e353: startup date [Tue Dec 17 16:45:45 EST 2019]; root of context hierarchy
+2019-12-17 16:45:47.788  INFO 66633 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-17 16:45:47.821  INFO 66633 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-17 16:45:48.004  WARN 66633 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-17 16:45:48.010  WARN 66633 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-17 16:45:48.070  INFO 66633 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-17 16:45:48.070  INFO 66633 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2768 ms
+2019-12-17 16:45:48.206  INFO 66633 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-17 16:45:48.215  INFO 66633 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-17 16:45:48.217  INFO 66633 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-17 16:45:48.217  INFO 66633 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-17 16:45:48.218  INFO 66633 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-17 16:45:48.219  INFO 66633 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-12-17 16:45:48.331  WARN 66633 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-12-17 16:45:48.348  INFO 66633 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Mac OS X, Arch: x86_64
+2019-12-17 16:45:48.348  WARN 66633 --- [main] l.s.c.AudioSendFactoryConfiguration      : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2019-12-17 16:45:49.574  INFO 66633 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-12-17 16:45:49.746  INFO 66633 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-12-17 16:45:50.143  INFO 66633 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:45:50.629  INFO 66633 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59a6e353: startup date [Tue Dec 17 16:45:45 EST 2019]; root of context hierarchy
+2019-12-17 16:45:50.799  INFO 66633 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-12-17 16:45:50.802  INFO 66633 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:45:50.803  INFO 66633 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:45:50.805  INFO 66633 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String lavalink.server.info.InfoRestHandler.version()
+2019-12-17 16:45:50.811  INFO 66633 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-17 16:45:50.812  INFO 66633 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-17 16:45:50.876  INFO 66633 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:45:50.876  INFO 66633 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:45:51.550  INFO 66633 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-12-17 16:45:51.566  INFO 66633 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-12-17 16:45:51.712  INFO 66633 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 1983 (http) with context path ''
+2019-12-17 16:45:51.724  INFO 66633 --- [main] lavalink.server.Launcher                 : Started Launcher in 7.969 seconds (JVM running for 8.978)
+2019-12-17 16:46:06.292  INFO 66633 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-17 16:46:06.293  INFO 66633 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-17 16:46:06.328  INFO 66633 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2019-12-17 16:46:06.402  INFO 66633 --- [XNIO-2 task-1] l.server.player.AudioLoaderRestHandler   : GET /loadtracks
+2019-12-17 16:46:07.799  INFO 66633 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: ChickenFucker
+2019-12-17 16:46:08.565  INFO 66633 --- [XNIO-2 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:63694
+2019-12-17 16:46:08.649  INFO 66633 --- [XNIO-2 task-3] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-12-17 16:46:08.749  INFO 66633 --- [XNIO-2 task-3] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:63694
+2019-12-17 16:46:08.779  INFO 66633 --- [XNIO-2 I/O-4] lavalink.server.io.SocketServer          : {"op": "destroy", "guildId": "647250888955658262"}
+2019-12-17 16:46:08.793  INFO 66633 --- [XNIO-2 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "647250888955658262", "sessionId": "296538965a89a35aeba0b4c8ee4ff223", "event": {"token": "a42557f329e2c87d", "guild_id": "647250888955658262", "endpoint": "us-east698.discord.media:80"}}
+2019-12-17 16:46:08.800  INFO 66633 --- [XNIO-2 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "647250888955658262", "track": "QAAApAIAQFRoZSBEZXZpbCdzIFJlamVjdHMgKDkvMTApIE1vdmllIENMSVAgLSBDaGlja2VuIEYqKiplciAoMjAwNSkgSEQACk1vdmllY2xpcHMAAAAAAAJGCAALdWpFYmVqZXBoTk0AAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj11akViZWplcGhOTQAHeW91dHViZQAAAAAAAAAA", "startTime": 149000}
+2019-12-17 16:46:09.551 ERROR 66633 --- [parallel-3] reactor.core.scheduler.Schedulers        : Scheduler worker in group main failed with an uncaught exception
+
+java.lang.UnsatisfiedLinkError: Required library at /natives/darwin/libudpqueue.dylib was not found
+	at com.sedmelluq.discord.lavaplayer.natives.NativeLibLoader.extractLibrary(NativeLibLoader.java:93) ~[lavaplayer-common-1.0.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.natives.NativeLibLoader.load(NativeLibLoader.java:77) ~[lavaplayer-common-1.0.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.udpqueue.natives.UdpQueueManagerLibrary.getInstance(UdpQueueManagerLibrary.java:13) ~[udp-queue-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.udpqueue.natives.UdpQueueManager.<init>(UdpQueueManager.java:27) ~[udp-queue-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.initialiseQueueManager(NativeAudioSendFactory.java:40) ~[jda-nas-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendFactory.addInstance(NativeAudioSendFactory.java:69) ~[jda-nas-1.0.6.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.jdaudp.NativeAudioSendSystem.start(NativeAudioSendSystem.java:22) ~[jda-nas-1.0.6.jar!/:na]
+	at com.github.shredder121.asyncaudio.jda.AsyncAudioSendSystemWrapper.start(AsyncAudioSendSystemWrapper.java:37) ~[jda-async-packetprovider-1.3.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.startSendSystemIfReady(AudioConnection.java:312) ~[magma-0.9.0.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.hookOnNext(AudioConnection.java:203) ~[magma-0.9.0.jar!/:na]
+	at space.npstr.magma.connections.AudioConnection.hookOnNext(AudioConnection.java:58) ~[magma-0.9.0.jar!/:na]
+	at reactor.core.publisher.BaseSubscriber.onNext(BaseSubscriber.java:158) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.runAsync(FluxPublishOn.java:398) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.publisher.FluxPublishOn$PublishOnSubscriber.run(FluxPublishOn.java:484) ~[reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84) [reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37) [reactor-core-3.2.1.RELEASE.jar!/:3.2.1.RELEASE]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_231]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_231]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_231]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_231]
+
+2019-12-17 16:46:10.236  INFO 66633 --- [XNIO-2 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "647250888955658262", "track": "QAAApAIAQFRoZSBEZXZpbCdzIFJlamVjdHMgKDkvMTApIE1vdmllIENMSVAgLSBDaGlja2VuIEYqKiplciAoMjAwNSkgSEQACk1vdmllY2xpcHMAAAAAAAJGCAALdWpFYmVqZXBoTk0AAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj11akViZWplcGhOTQAHeW91dHViZQAAAAAAAAAA", "startTime": 0}
+2019-12-17 16:46:41.534  INFO 66633 --- [Thread-2] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59a6e353: startup date [Tue Dec 17 16:45:45 EST 2019]; root of context hierarchy
+2019-12-17 16:46:41.542  INFO 66633 --- [Thread-2] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-12-17 16:46:41.543  INFO 66633 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-12-17 16:46:41.545  INFO 66633 --- [Thread-2] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-12-17 16:46:41.550  INFO 66633 --- [Thread-2] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-12-17 16:46:41.564 ERROR 66633 --- [XNIO-2 I/O-4] org.xnio.listener                        : XNIO001007: A channel event listener threw an exception
+
+java.util.concurrent.RejectedExecutionException: XNIO007007: Thread is terminating
+	at org.xnio.nio.WorkerThread.execute(WorkerThread.java:590) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.websockets.jsr.UndertowSession$3.handleEvent(UndertowSession.java:396) ~[undertow-websockets-jsr-1.4.25.Final.jar!/:1.4.25.Final]
+	at io.undertow.websockets.jsr.UndertowSession$3.handleEvent(UndertowSession.java:388) ~[undertow-websockets-jsr-1.4.25.Final.jar!/:1.4.25.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.server.protocol.framed.AbstractFramedChannel$FrameCloseListener.handleEvent(AbstractFramedChannel.java:1061) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at io.undertow.server.protocol.framed.AbstractFramedChannel$FrameCloseListener.handleEvent(AbstractFramedChannel.java:975) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.conduits.WriteReadyHandler$ChannelListenerHandler.terminated(WriteReadyHandler.java:70) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.writeTerminated(NioSocketConduit.java:234) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.terminateWrites(NioSocketConduit.java:223) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.truncateWrites(NioSocketConduit.java:228) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.conduits.IdleTimeoutConduit.truncateWrites(IdleTimeoutConduit.java:387) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at org.xnio.conduits.ConduitStreamSinkChannel.close(ConduitStreamSinkChannel.java:186) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.IoUtils.safeClose(IoUtils.java:134) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.conduits.WriteReadyHandler$ChannelListenerHandler.forceTermination(WriteReadyHandler.java:57) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.forceTermination(NioSocketConduit.java:107) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:494) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+
+2019-12-17 16:46:49.928  INFO 66651 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.2.1.1
+	Build:          828
+	Build time:     31.07.2019 11:02:24 CEST
+	Branch          master
+	Commit:         d9c9aa0
+	Commit time:    31.07.2019 10:59:59 CEST
+	JVM:            1.8.0_231
+	Lavaplayer      1.3.19
+
+2019-12-17 16:46:50.068  INFO 66651 --- [main] o.s.boot.SpringApplication               : [32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[39m    =========================================[32m/_/_/_/
+
+[32m    :: Lavalink    :: [39m      
+[32m    :: Spring Boot :: [39m       (v2.0.4.RELEASE)
+
+
+2019-12-17 16:46:50.324  INFO 66651 --- [main] lavalink.server.Launcher                 : Starting Launcher on iMac.local with PID 66651 (/Users/noire/Desktop/Axiro-ALT/Lavalink.jar started by noire in /Users/noire/Desktop/Axiro-ALT)
+2019-12-17 16:46:50.326  INFO 66651 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-12-17 16:46:50.468  INFO 66651 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Tue Dec 17 16:46:50 EST 2019]; root of context hierarchy
+2019-12-17 16:46:50.708  WARN 66651 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-12-17 16:46:53.057  INFO 66651 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-17 16:46:53.095  INFO 66651 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-17 16:46:53.265  WARN 66651 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-17 16:46:53.266  WARN 66651 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-17 16:46:53.313  INFO 66651 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-17 16:46:53.313  INFO 66651 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2845 ms
+2019-12-17 16:46:53.444  INFO 66651 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-17 16:46:53.454  INFO 66651 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-17 16:46:53.456  INFO 66651 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-17 16:46:53.457  INFO 66651 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-17 16:46:53.457  INFO 66651 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-17 16:46:53.457  INFO 66651 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-12-17 16:46:53.569  WARN 66651 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-12-17 16:46:53.587  INFO 66651 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Mac OS X, Arch: x86_64
+2019-12-17 16:46:53.587  WARN 66651 --- [main] l.s.c.AudioSendFactoryConfiguration      : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2019-12-17 16:46:54.790  INFO 66651 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-12-17 16:46:54.951  INFO 66651 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-12-17 16:46:55.347  INFO 66651 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:46:55.821  INFO 66651 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Tue Dec 17 16:46:50 EST 2019]; root of context hierarchy
+2019-12-17 16:46:55.996  INFO 66651 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-12-17 16:46:55.999  INFO 66651 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:46:56.000  INFO 66651 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:46:56.003  INFO 66651 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String lavalink.server.info.InfoRestHandler.version()
+2019-12-17 16:46:56.014  INFO 66651 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-17 16:46:56.016  INFO 66651 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-17 16:46:56.093  INFO 66651 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:46:56.095  INFO 66651 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:46:56.790  INFO 66651 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-12-17 16:46:56.809  INFO 66651 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-12-17 16:46:56.958  INFO 66651 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-17 16:46:56.967 ERROR 66651 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.boot.web.server.PortInUseException: Port 1983 is already in use
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServer.start(UndertowServletWebServer.java:159) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at lavalink.server.Launcher.main(Launcher.java:72) ~[classes!/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[Lavalink.jar:na]
+
+2019-12-17 16:46:56.971 ERROR 66651 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 1983 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 1983 or configure this application to listen on another port.
+
+2019-12-17 16:46:56.974  INFO 66651 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Tue Dec 17 16:46:50 EST 2019]; root of context hierarchy
+2019-12-17 16:46:56.976  INFO 66651 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-12-17 16:46:56.978  INFO 66651 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-12-17 16:46:56.984  INFO 66651 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-12-17 16:47:02.985  INFO 66672 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.2.1.1
+	Build:          828
+	Build time:     31.07.2019 11:02:24 CEST
+	Branch          master
+	Commit:         d9c9aa0
+	Commit time:    31.07.2019 10:59:59 CEST
+	JVM:            1.8.0_231
+	Lavaplayer      1.3.19
+
+2019-12-17 16:47:03.129  INFO 66672 --- [main] o.s.boot.SpringApplication               : [32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[39m    =========================================[32m/_/_/_/
+
+[32m    :: Lavalink    :: [39m      
+[32m    :: Spring Boot :: [39m       (v2.0.4.RELEASE)
+
+
+2019-12-17 16:47:03.372  INFO 66672 --- [main] lavalink.server.Launcher                 : Starting Launcher on iMac.local with PID 66672 (/Users/noire/Desktop/Axiro-ALT/Lavalink.jar started by noire in /Users/noire/Desktop/Axiro-ALT)
+2019-12-17 16:47:03.374  INFO 66672 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-12-17 16:47:03.496  INFO 66672 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Tue Dec 17 16:47:03 EST 2019]; root of context hierarchy
+2019-12-17 16:47:03.706  WARN 66672 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-12-17 16:47:05.907  INFO 66672 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-17 16:47:05.941  INFO 66672 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-17 16:47:06.103  WARN 66672 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-17 16:47:06.103  WARN 66672 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-17 16:47:06.152  INFO 66672 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-17 16:47:06.157  INFO 66672 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2658 ms
+2019-12-17 16:47:06.279  INFO 66672 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-17 16:47:06.288  INFO 66672 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-17 16:47:06.290  INFO 66672 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-17 16:47:06.290  INFO 66672 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-17 16:47:06.291  INFO 66672 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-17 16:47:06.291  INFO 66672 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-12-17 16:47:06.399  WARN 66672 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-12-17 16:47:06.416  INFO 66672 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Mac OS X, Arch: x86_64
+2019-12-17 16:47:06.417  WARN 66672 --- [main] l.s.c.AudioSendFactoryConfiguration      : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2019-12-17 16:47:07.627  INFO 66672 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-12-17 16:47:07.770  INFO 66672 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-12-17 16:47:08.139  INFO 66672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:47:08.639  INFO 66672 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Tue Dec 17 16:47:03 EST 2019]; root of context hierarchy
+2019-12-17 16:47:08.811  INFO 66672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-12-17 16:47:08.814  INFO 66672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:47:08.815  INFO 66672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:47:08.817  INFO 66672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String lavalink.server.info.InfoRestHandler.version()
+2019-12-17 16:47:08.823  INFO 66672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-17 16:47:08.824  INFO 66672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-17 16:47:08.897  INFO 66672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:47:08.897  INFO 66672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:47:09.548  INFO 66672 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-12-17 16:47:09.570  INFO 66672 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-12-17 16:47:09.713  INFO 66672 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-17 16:47:09.721 ERROR 66672 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.boot.web.server.PortInUseException: Port 1983 is already in use
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServer.start(UndertowServletWebServer.java:159) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at lavalink.server.Launcher.main(Launcher.java:72) ~[classes!/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[Lavalink.jar:na]
+
+2019-12-17 16:47:09.728 ERROR 66672 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 1983 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 1983 or configure this application to listen on another port.
+
+2019-12-17 16:47:09.730  INFO 66672 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Tue Dec 17 16:47:03 EST 2019]; root of context hierarchy
+2019-12-17 16:47:09.733  INFO 66672 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-12-17 16:47:09.736  INFO 66672 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-12-17 16:47:09.739  INFO 66672 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-12-17 16:50:45.545  INFO 66731 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        b5fe889babe14223404c1cb4b054f134fccdf2be-SNAPSHOT
+	Build:          759
+	Build time:     05.03.2019 13:08:08 CET
+	Branch          master
+	Commit:         b5fe889
+	Commit time:    05.03.2019 13:05:02 CET
+	JVM:            1.8.0_231
+	Lavaplayer      1.3.10
+
+2019-12-17 16:50:45.661  INFO 66731 --- [main] o.s.boot.SpringApplication               : [32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[39m    =========================================[32m/_/_/_/
+
+[32m    :: Lavalink    :: [39m      
+[32m    :: Spring Boot :: [39m       (v2.0.4.RELEASE)
+
+
+2019-12-17 16:50:45.925  INFO 66731 --- [main] lavalink.server.Launcher                 : Starting Launcher on iMac.local with PID 66731 (/Users/noire/Desktop/Axiro-ALT/Lavalink.jar started by noire in /Users/noire/Desktop/Axiro-ALT)
+2019-12-17 16:50:45.927  INFO 66731 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-12-17 16:50:46.036  INFO 66731 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@129a8472: startup date [Tue Dec 17 16:50:46 EST 2019]; root of context hierarchy
+2019-12-17 16:50:46.097  WARN 66731 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-12-17 16:50:48.428  INFO 66731 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-12-17 16:50:48.455  INFO 66731 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-17 16:50:48.612  WARN 66731 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-12-17 16:50:48.618  WARN 66731 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-17 16:50:48.676  INFO 66731 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-12-17 16:50:48.677  INFO 66731 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2641 ms
+2019-12-17 16:50:48.806  INFO 66731 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-17 16:50:48.816  INFO 66731 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-17 16:50:48.818  INFO 66731 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-17 16:50:48.818  INFO 66731 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-17 16:50:48.819  INFO 66731 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-17 16:50:48.819  INFO 66731 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-12-17 16:50:49.887  WARN 66731 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-12-17 16:50:49.905  INFO 66731 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Mac OS X, Arch: x86_64
+2019-12-17 16:50:49.906  WARN 66731 --- [main] l.s.c.AudioSendFactoryConfiguration      : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2019-12-17 16:50:51.127  INFO 66731 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-12-17 16:50:51.302  INFO 66731 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-12-17 16:50:51.726  INFO 66731 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:50:52.391  INFO 66731 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@129a8472: startup date [Tue Dec 17 16:50:46 EST 2019]; root of context hierarchy
+2019-12-17 16:50:52.607  INFO 66731 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/nashorn],methods=[POST]}" onto public java.lang.String lavalink.server.util.DebugRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2019-12-17 16:50:52.620  INFO 66731 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-12-17 16:50:52.622  INFO 66731 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:50:52.623  INFO 66731 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-12-17 16:50:52.634  INFO 66731 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-17 16:50:52.634  INFO 66731 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-17 16:50:52.730  INFO 66731 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:50:52.731  INFO 66731 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-17 16:50:53.272  INFO 66731 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-12-17 16:50:53.288  INFO 66731 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-12-17 16:50:53.430  INFO 66731 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 1983 (http) with context path ''
+2019-12-17 16:50:53.439  INFO 66731 --- [main] lavalink.server.Launcher                 : Started Launcher in 8.902 seconds (JVM running for 9.908)
+2019-12-17 16:51:06.503  INFO 66731 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-17 16:51:06.527  INFO 66731 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-17 16:51:06.565  INFO 66731 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2019-12-17 16:51:06.671  INFO 66731 --- [XNIO-2 task-1] l.server.player.AudioLoaderRestHandler   : GET /loadtracks
+2019-12-17 16:51:08.038  INFO 66731 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: ChickenFucker
+2019-12-17 16:51:11.612  INFO 66731 --- [XNIO-2 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:63770
+2019-12-17 16:51:11.757  INFO 66731 --- [XNIO-2 task-3] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-12-17 16:51:11.891  INFO 66731 --- [XNIO-2 task-3] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:63770
+2019-12-17 16:51:11.935  INFO 66731 --- [XNIO-2 I/O-4] lavalink.server.io.SocketServer          : {"op": "destroy", "guildId": "647250888955658262"}
+2019-12-17 16:51:11.968  INFO 66731 --- [XNIO-2 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "647250888955658262", "sessionId": "296538965a89a35aeba0b4c8ee4ff223", "event": {"token": "a42557f329e2c87d", "guild_id": "647250888955658262", "endpoint": "us-east698.discord.media:80"}}
+2019-12-17 16:51:11.998  INFO 66731 --- [XNIO-2 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "647250888955658262", "track": "QAAApAIAQFRoZSBEZXZpbCdzIFJlamVjdHMgKDkvMTApIE1vdmllIENMSVAgLSBDaGlja2VuIEYqKiplciAoMjAwNSkgSEQACk1vdmllY2xpcHMAAAAAAAJGCAALdWpFYmVqZXBoTk0AAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj11akViZWplcGhOTQAHeW91dHViZQAAAAAAAAAA", "startTime": 149000}
+2019-12-17 16:51:14.259  INFO 66731 --- [XNIO-2 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "647250888955658262", "track": "QAAApAIAQFRoZSBEZXZpbCdzIFJlamVjdHMgKDkvMTApIE1vdmllIENMSVAgLSBDaGlja2VuIEYqKiplciAoMjAwNSkgSEQACk1vdmllY2xpcHMAAAAAAAJGCAALdWpFYmVqZXBoTk0AAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj11akViZWplcGhOTQAHeW91dHViZQAAAAAAAAAA", "startTime": 0}
+2019-12-17 16:52:19.909  INFO 66731 --- [Thread-2] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@129a8472: startup date [Tue Dec 17 16:50:46 EST 2019]; root of context hierarchy
+2019-12-17 16:52:19.913  INFO 66731 --- [Thread-2] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-12-17 16:52:19.915  INFO 66731 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-12-17 16:52:19.921  INFO 66731 --- [Thread-2] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-12-17 16:52:19.930  INFO 66731 --- [Thread-2] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-12-17 16:52:19.956 ERROR 66731 --- [XNIO-2 I/O-4] org.xnio.listener                        : XNIO001007: A channel event listener threw an exception
+
+java.util.concurrent.RejectedExecutionException: XNIO007007: Thread is terminating
+	at org.xnio.nio.WorkerThread.execute(WorkerThread.java:590) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.websockets.jsr.UndertowSession$3.handleEvent(UndertowSession.java:396) ~[undertow-websockets-jsr-1.4.25.Final.jar!/:1.4.25.Final]
+	at io.undertow.websockets.jsr.UndertowSession$3.handleEvent(UndertowSession.java:388) ~[undertow-websockets-jsr-1.4.25.Final.jar!/:1.4.25.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.server.protocol.framed.AbstractFramedChannel$FrameCloseListener.handleEvent(AbstractFramedChannel.java:1061) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at io.undertow.server.protocol.framed.AbstractFramedChannel$FrameCloseListener.handleEvent(AbstractFramedChannel.java:975) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.conduits.WriteReadyHandler$ChannelListenerHandler.terminated(WriteReadyHandler.java:70) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.writeTerminated(NioSocketConduit.java:234) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.terminateWrites(NioSocketConduit.java:223) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.truncateWrites(NioSocketConduit.java:228) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at io.undertow.conduits.IdleTimeoutConduit.truncateWrites(IdleTimeoutConduit.java:387) [undertow-core-2.0.14.Final.jar!/:2.0.14.Final]
+	at org.xnio.conduits.ConduitStreamSinkChannel.close(ConduitStreamSinkChannel.java:186) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.IoUtils.safeClose(IoUtils.java:134) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.conduits.WriteReadyHandler$ChannelListenerHandler.forceTermination(WriteReadyHandler.java:57) [xnio-api-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.NioSocketConduit.forceTermination(NioSocketConduit.java:107) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:494) [xnio-nio-3.3.8.Final.jar!/:3.3.8.Final]
+
