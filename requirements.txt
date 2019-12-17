@@ -1,5 +1,5 @@
-discord
 lavalink
 asyncpg
 requests
 lxml
+discord
