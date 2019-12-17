@@ -1,0 +1,5 @@
+discord
+lavalink
+asyncpg
+requests
+lxml
