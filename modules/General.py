@@ -88,7 +88,7 @@ class General(commands.Cog, name="General"):
     @commands.guild_only()
     async def invite(self, ctx):
         embed = discord.Embed(color=discord.Colour.dark_orange(), title="Are you going to invite me to your server?",
-                              description="Invite me by clicking [here](https://discordapp.com/api/oauth2/authorize?client_id=458834071796187149&permissions=8&scope=bot).")
+                              description="Invite me by clicking [here](https://discordapp.com/api/oauth2/authorize?client_id=629070628703436811&permissions=2147483127&scope=bot).")
         embed.set_footer(icon_url=ctx.message.author.avatar_url, text="Requested by {}".format(ctx.message.author.name))
         await ctx.send(embed=embed)
 
