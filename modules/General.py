@@ -77,14 +77,14 @@ class General(commands.Cog, name="General"):
     @commands.command()
     async def invite(self, ctx):
         embed = discord.Embed(color=discord.Colour.dark_orange(), title="Are you going to invite me to your server?",
-                              description="Invite me by clicking [here](https://discordapp.com/api/oauth2/authorize?client_id=458834071796187149&permissions=8&scope=bot).")
+                              description="Invite me by clicking [here](https://discordapp.com/api/oauth2/authorize?client_id=629070628703436811&permissions=8&scope=bot).")
         embed.set_footer(icon_url=ctx.message.author.avatar_url, text="Requested by {}".format(ctx.message.author.name))
         await ctx.send(embed=embed)
 
     @commands.command()
     async def server(self, ctx):
         embed = discord.Embed(color=discord.Colour.dark_gold(), title="So you want to join my creator's server?",
-                              description="Come join the support server by clicking [here](https://discord.gg/NEpsy8h)")
+                              description="Come join the support server by clicking [here](https://discord.gg/veVDS47)")
         embed.set_footer(icon_url=ctx.message.author.avatar_url, text="Requested by {}".format(ctx.message.author.name))
         await ctx.send(embed=embed)
 
@@ -109,7 +109,7 @@ class General(commands.Cog, name="General"):
     @commands.command()
     async def github(self, ctx):
         embed = discord.Embed(color=discord.Colour.light_grey(), title="Are you a programmer and want to help?",
-                              description="You should click [here](https://github.com/tangalbert919/WeirdnessBot) to see my repository. I am an open-source bot.")
+                              description="You should click [here](https://github.com/Austcool-Walker/Axiro-ALT.git) to see my repository. I am an open-source bot.")
         embed.set_footer(icon_url=ctx.message.author.avatar_url, text="Requested by {}".format(ctx.message.author.name))
         await ctx.send(embed=embed)
 
