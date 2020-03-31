@@ -42,14 +42,13 @@ class General(commands.Cog, name="General"):
         responses = ['Pong!', 'Ack!', 'Whoa!', 'Pang!', 'How am I doing?']
         await ctx.send("{} ``Time: {}ms``".format(random.choice(responses), time_delta))
 
-    @commands.command(aliases=['info'])
     async def about(self, beep):
-        embed = discord.Embed(title="About Axiro:", description="This bot was created to do what most "
-                                    "bots should do, and then some really weird things.")
-        embed.add_field(name="Author: ", value="tangalbert919 (The Freaking iDroid)", inline=False)
+        embed = discord.Embed(title="About AxiroALT:", description="This bot was created to do what most "
+                                    "bots should do, and then some really weird things")
+        embed.add_field(name="Author: ", value="Origional Creator tangalbert919 (<@310496481435975693>) forked by <@318528448320634881> (絶望-ウアカー アストクール#0717)", inline=False)
         embed.add_field(name="Stats: ", value="Guilds: **{}**\nUnique Players: **{}**\n"
                         .format(len(self.bot.guilds),sum(1 for _ in self.bot.get_all_members())))
-        embed.add_field(name="Version: ", value="Axiro: **{}**\nPython: **{}**\nDiscord.py: **{}**"
+        embed.add_field(name="Version: ", value="AxiroALT: **{}**\nPython: **{}**\nDiscord.py: **{}**"
                         .format(self.bot.version_code, sys.version, discord.__version__))
         embed.set_footer(icon_url=beep.message.author.avatar_url,
                          text="Requested by {}".format(beep.message.author.name))
