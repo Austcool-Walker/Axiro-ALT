@@ -10,8 +10,6 @@ class Economy(commands.Cog, name="Economy"):
         self.bot = bot
 
     @commands.command()
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def balance(self, ctx):
         if not self.bot.usedatabase:
             await ctx.send("This command requires a running database to work.")
@@ -32,8 +30,6 @@ class Economy(commands.Cog, name="Economy"):
             await ctx.send(":chicken: **You have {} chickens.**".format(money))
 
     @commands.command()
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def pay(self, ctx, user: discord.User, payment):
         if not self.bot.usedatabase:
             await ctx.send("This command requires a running database to work.")
@@ -65,8 +61,6 @@ class Economy(commands.Cog, name="Economy"):
         await ctx.send("Successfully paid {} chickens to {}!".format(payment, user.name))
 
     @commands.command()
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def gamble(self, ctx, money):
         if not self.bot.usedatabase:
             await ctx.send("This command requires a running database to work.")
@@ -96,8 +90,6 @@ class Economy(commands.Cog, name="Economy"):
         await self.bot.db.execute(next_sql, str(result), ctx.message.author.id)
 
     @commands.command()
-    @commands.cooldown(1, 86400, BucketType.user)
-    @commands.guild_only()
     async def daily(self, ctx):
         if not self.bot.usedatabase:
             await ctx.send("This command requires a running database to work.")
@@ -119,8 +111,6 @@ class Economy(commands.Cog, name="Economy"):
             await ctx.send("You just got 100 chickens.")
 
     @commands.command()
-    @commands.cooldown(1, 300, BucketType.user)
-    @commands.guild_only()
     async def raid(self, ctx):
         if not self.bot.usedatabase:
             await ctx.send("This command requires a running database to work.")
@@ -138,8 +128,6 @@ class Economy(commands.Cog, name="Economy"):
             await ctx.send("You were attacked by farmers during a raid. :frowning:")
 
     @commands.command()
-    @commands.cooldown(1, 300, BucketType.user)
-    @commands.guild_only()
     async def mine(self, ctx):
         if not self.bot.usedatabase:
             await ctx.send("This command requires a running database to work.")
@@ -157,8 +145,6 @@ class Economy(commands.Cog, name="Economy"):
             await ctx.send("You couldn't find anything valuable while mining. :frowning:")
 
     @commands.command()
-    @commands.cooldown(1, 300, BucketType.user)
-    @commands.guild_only()
     async def fish(self, ctx):
         if not self.bot.usedatabase:
             await ctx.send("This command requires a running database to work.")

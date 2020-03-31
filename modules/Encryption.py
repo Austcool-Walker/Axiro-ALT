@@ -12,8 +12,6 @@ class Encryption(commands.Cog, name="Encryption"):
         self.bot = bot
 
     @commands.command()
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def encode(self, ctx, target, *, message: str):
         if "base64".lower() in target:
             crypto = str(base64.b64encode(bytes(message, 'utf-8')))
@@ -30,8 +28,6 @@ class Encryption(commands.Cog, name="Encryption"):
         await ctx.send(embed=embed)
 
     @commands.command()
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def hash(self, ctx, target, *, message: str):
         if "md5".lower() in target:
             hash = hashlib.md5(message.encode('utf-8')).hexdigest()
@@ -55,8 +51,6 @@ class Encryption(commands.Cog, name="Encryption"):
         await ctx.send(embed=embed)
 
     @commands.command()
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def decode(self, ctx, target, *, message: str):
         if "base64".lower() in target:
             decoded = str(base64.b64decode(bytes(message, 'utf-8')))
@@ -78,8 +72,6 @@ class Encryption(commands.Cog, name="Encryption"):
         await ctx.send(embed=embed)
 
     @commands.command()
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def encipher(self, ctx, target, *, message: str):
         if "caesar".lower() in target:
             L2I = dict(zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ", range(26)))
@@ -96,8 +88,6 @@ class Encryption(commands.Cog, name="Encryption"):
             await ctx.send('That\'s not a valid cipher option.')
 
     @commands.command()
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def decipher(self, ctx, target, *, message: str):
         if "caesar".lower() in target:
             L2I = dict(zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ", range(26)))
@@ -114,8 +104,6 @@ class Encryption(commands.Cog, name="Encryption"):
             await ctx.send('That\'s not a valid cipher option.')
 
     @commands.command()
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def reverse(self, ctx, *, message: str):
         new_msg = message[::-1]
         await ctx.send(new_msg)

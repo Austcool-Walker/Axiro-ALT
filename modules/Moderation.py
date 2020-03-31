@@ -11,8 +11,6 @@ class Moderation(commands.Cog, name="Moderation"):
 
     @commands.command()
     @commands.has_permissions(kick_members=True)
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def kick(self, ctx, user: discord.User, *, reason: str):
         if not ctx.message.channel.permissions_for(ctx.message.author.guild.me).kick_members:
             await ctx.send(":x: I do not have permission to kick players.")
@@ -26,8 +24,6 @@ class Moderation(commands.Cog, name="Moderation"):
 
     @commands.command()
     @commands.has_permissions(ban_members=True)
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def ban(self, ctx, user: discord.User, *, reason: str):
         if not ctx.message.channel.permissions_for(ctx.message.author.guild.me).ban_members:
             await ctx.send(":x: I do not have permission to ban players.")
@@ -41,8 +37,6 @@ class Moderation(commands.Cog, name="Moderation"):
 
     @commands.command()
     @commands.has_permissions(manage_messages=True)
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def mute(self, ctx, user: discord.Member):
         if not ctx.message.channel.permissions_for(ctx.message.author.guild.me).manage_roles:
             await ctx.send(":x: I do not have permission to manage roles.")
@@ -56,8 +50,6 @@ class Moderation(commands.Cog, name="Moderation"):
 
     @commands.command()
     @commands.has_permissions(manage_messages=True)
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def unmute(self, ctx, user: discord.Member):
         if not ctx.message.channel.permissions_for(ctx.message.author.guild.me).manage_roles:
             await ctx.send(":x: I do not have permission to manage roles.")
@@ -71,8 +63,6 @@ class Moderation(commands.Cog, name="Moderation"):
 
     @commands.command()
     @commands.has_permissions(manage_messages=True)
-    @commands.cooldown(1, 10, BucketType.guild)
-    @commands.guild_only()
     async def prune(self, ctx, number: int):
         if not ctx.message.channel.permissions_for(ctx.message.author.guild.me).manage_messages:
             await ctx.send("I do not have permission to delete messages.")

@@ -13,8 +13,6 @@ class Miscellaneous(commands.Cog, name="Miscellaneous"):
         self.bot = bot
 
     @commands.command()
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def news(self, msg):
         config = json.loads(open('config.json', 'r').read())
         try:
@@ -35,8 +33,6 @@ class Miscellaneous(commands.Cog, name="Miscellaneous"):
         await msg.send(embed=embed)
 
     @commands.command()
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def uptime(self, ctx):
         delta_uptime = datetime.utcnow() - self.bot.launch_time
         hours, remainder = divmod(int(delta_uptime.total_seconds()), 3600)
@@ -45,8 +41,6 @@ class Miscellaneous(commands.Cog, name="Miscellaneous"):
         await ctx.send("I have been up for "f"{days} days, {hours} hours, {minutes} minutes, and {seconds} seconds.")
 
     @commands.command()
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def winner(self, ctx):
         try:
             user = ctx.message.mentions[0]
@@ -56,8 +50,6 @@ class Miscellaneous(commands.Cog, name="Miscellaneous"):
         await ctx.send("Congratulations, {}! You're a winner!".format(user.name))
 
     @commands.command()
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def loser(self, ctx):
         try:
             user = ctx.message.mentions[0]
@@ -68,8 +60,6 @@ class Miscellaneous(commands.Cog, name="Miscellaneous"):
 
     @commands.command()
     @commands.has_permissions(manage_nicknames=True)
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def drumpf(self, ctx, user: discord.Member):
         if not ctx.message.channel.permissions_for(ctx.message.author.guild.me).manage_nicknames:
             await ctx.send(":x: I do not have permission to edit nicknames.")
@@ -83,25 +73,33 @@ class Miscellaneous(commands.Cog, name="Miscellaneous"):
         await ctx.send("Someone has been turned into Donald Drumpf.")
 
     @commands.command()
-    @commands.cooldown(1, 5, BucketType.user)
-    @commands.guild_only()
     async def wegothim(self, ctx):
         embed = discord.Embed(color=discord.Colour.red(), title="WE GOT HIM!")
         embed.set_image(url="https://media1.tenor.com/images/4a08ff9d3f956dd814fc8ee1cfaac592/tenor.gif?itemid=10407619")
         await ctx.send(embed=embed)
 
-    def repairJSON(self, temp):
-        temp = temp.replace("{\'", "{\"")
-        temp = temp.replace("\': ", "\": ")
-        temp = temp.replace("\": \'", "\": \"")
-        temp = temp.replace("\', \'", "\", \"")
-        temp = temp.replace(", \'", ", \"")
-        temp = temp.replace("\'}", "\"}")
-        temp = temp.replace("True", "\"True\"")
-        temp = temp.replace("False", "\"False\"")
-        temp = temp.replace("None", "\"None\"")
-        #temp = temp[1:-1]
-        return temp
+    @commands.command()
+    async def bowtourqueen(self, ctx):
+        embed = discord.Embed(color=discord.Colour.red(), title="Bow To Your New Queen!")
+        embed.set_image(url="https://i.imgur.com/t2LE30K.png")
+        await ctx.send(embed=embed)
+
+    @commands.command()
+    async def degen(self, ctx):
+        embed = discord.Embed(color=discord.Colour.red(), title="You Are All Degnerates Now!")
+        embed.set_image(url="https://media1.tenor.com/images/eade076432e4650c25ed82a6368d5ba4/tenor.gif?itemid=15576648")
+        await ctx.send(embed=embed)
+
+    @commands.command()
+    async def finished(self, ctx):
+        embed = discord.Embed(color=discord.Colour.red(), title="YOU'RE FINISHED!")
+        embed.set_image(url="https://i.fiery.me/2KnBa.gif")
+        await ctx.send(embed=embed)
+
+    @commands.command()
+    async def chrome(self, ctx):
+        await ctx.send('The current version of Chrome is ' + self.bot.chrome_version)
+
 
 def setup(bot):
     bot.add_cog(Miscellaneous(bot))

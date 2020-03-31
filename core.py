@@ -11,7 +11,7 @@ import aiohttp
 import traceback
 
 
-class WeirdnessBotOW(commands.AutoShardedBot):
+class WeirdnessBot(commands.AutoShardedBot):
 
     def __init__(self):
         self.config = json.loads(open('config.json', 'r').read())
@@ -20,7 +20,7 @@ class WeirdnessBotOW(commands.AutoShardedBot):
         self.remove_command('help')
 
         self.launch_time = datetime.utcnow()
-        self.version_code = "Release 6.1 based OW Internal Alpha"
+        self.version_code = "Release 7 Beta"
 
         dbpass = self.config['dbpass']
         dbuser = self.config['dbuser']
@@ -31,7 +31,7 @@ class WeirdnessBotOW(commands.AutoShardedBot):
             try:
                 self.db = await asyncpg.create_pool(**govinfo)
                 await self.db.execute(
-                    "CREATE TABLE IF NOT EXISTS users (id bigint primary key, name text, discrim varchar (4), money text);")
+                    "CREATE TABLE IF NOT EXISTS users (id bigint primary key, name text, discrim varchar (4), money text, blacklist text);")
                 await self.db.execute(
                     "CREATE TABLE IF NOT EXISTS guilds (id bigint primary key, name text, prefix text);")
             except Exception:
@@ -42,6 +42,9 @@ class WeirdnessBotOW(commands.AutoShardedBot):
 
         self.status_msg = json.loads(open('status.json', 'r').read())
         self.loop.create_task(self.status_task())
+
+        self.chrome_version = '0'
+        self.loop.create_task(self.fetch_omaha())
 
         for file in os.listdir("modules"):
             if file.endswith(".py"):
@@ -87,7 +90,7 @@ class WeirdnessBotOW(commands.AutoShardedBot):
             await asyncio.sleep(1800)
 
     async def on_ready(self):
-        await self.change_presence(activity=discord.Activity(name="Xhelp | Just started up!",
+        await self.change_presence(activity=discord.Activity(name="x!help | Just started up!",
                                                              type=discord.ActivityType.playing))
         print('Logged in as ' + self.user.name + ' with id ' + str(self.user.id))
         self.loop.create_task(self.update_stats())
@@ -105,10 +108,15 @@ class WeirdnessBotOW(commands.AutoShardedBot):
                 sql = "SELECT * FROM users WHERE id = $1"
                 user = await self.db.fetchrow(sql, message.author.id)
                 if not user:
-                    add_user = "INSERT INTO users (id, name, discrim, money) VALUES ($1, $2, $3, 0);"
+                    add_user = "INSERT INTO users (id, name, discrim, money, blacklist) VALUES ($1, $2, $3, 0, 0);"
                     await self.db.execute(add_user, message.author.id, message.author.name,
                                           message.author.discriminator)
                 else:
+                    check_blacklist = "SELECT blacklist FROM users WHERE id = $1"
+                    temp = await self.db.fetchval(check_blacklist, message.author.id)
+                    blacklist_value = int(temp)
+                    if blacklist_value == 1:
+                        return
                     update_user = "UPDATE users SET name = $1, discrim = $2 WHERE id = $3"
                     await self.db.execute(update_user, message.author.name, message.author.discriminator,
                                           message.author.id)
@@ -116,7 +124,7 @@ class WeirdnessBotOW(commands.AutoShardedBot):
 
     async def on_command_error(self, context, exception):
         if isinstance(exception, discord.ext.commands.errors.MissingRequiredArgument):
-            await context.send("You're missing one or more required arguments. Refer to ``Xhelp <command>`` for help.")
+            await context.send("You're missing one or more required arguments. Refer to ``x!help <command>`` for help.")
         elif isinstance(exception, discord.ext.commands.errors.BotMissingPermissions):
             await context.send("I am missing the required permissions to perform this command successfully.")
         elif isinstance(exception, discord.ext.commands.errors.MissingPermissions):
@@ -124,7 +132,7 @@ class WeirdnessBotOW(commands.AutoShardedBot):
         elif isinstance(exception, discord.ext.commands.errors.CommandNotFound):
             pass
         elif isinstance(exception, discord.ext.commands.errors.BadArgument):
-            await context.send("You used an invalid argument. Refer to ``Xhelp <command>`` for help.")
+            await context.send("You used an invalid argument. Refer to ``x!help <command>`` for help.")
         elif isinstance(exception, discord.ext.commands.errors.CommandOnCooldown):
             m, s = divmod(exception.retry_after, 60)
             h, m = divmod(m, 60)
@@ -138,15 +146,15 @@ class WeirdnessBotOW(commands.AutoShardedBot):
         else:
             await context.send("An error has occurred, and has been reported to the developer.")
             c = self.get_channel(545462395296940063)
-            await c.send(f'```py\n{exception}\n```')
+            await c.send(f'Error in command {context.command}:\n```py\n{exception}\n```')
 
     async def status_task(self):
         while not self.is_closed():
-            selected = random.randint(1, 10)
-            message = "Xhelp | " + self.status_msg.get(str(selected))
+            selected = random.randint(1, 19)
+            message = "x!help | " + self.status_msg.get(str(selected))
             await self.change_presence(activity=discord.Activity(name=message,
                                                                  type=discord.ActivityType.playing))
-            await asyncio.sleep(300)
+            await asyncio.sleep(30)
 
     async def on_guild_join(self, guild):
         if self.usedatabase:
@@ -186,7 +194,17 @@ class WeirdnessBotOW(commands.AutoShardedBot):
         else:
             return self.config['prefix']
 
+    async def fetch_omaha(self):
+        # This function is from my Omaha Watch bot. It has been scaled down for obvious reasons.
+        while not self.is_closed():
+            async with aiohttp.ClientSession() as session:
+                async with session.get('https://omahaproxy.appspot.com/all.json?os=win') as resp:
+                    data = await resp.json()
+                await session.close()
+            self.chrome_version = data[0]['versions'][4]['version']
+            await asyncio.sleep(1800)
 
-client = WeirdnessBotOW()
+
+client = WeirdnessBot()
 config = json.loads(open('config.json', 'r').read())
 client.run(config.get('discordtoken'))
