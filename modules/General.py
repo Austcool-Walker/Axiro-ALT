@@ -42,6 +42,7 @@ class General(commands.Cog, name="General"):
         responses = ['Pong!', 'Ack!', 'Whoa!', 'Pang!', 'How am I doing?']
         await ctx.send("{} ``Time: {}ms``".format(random.choice(responses), time_delta))
 
+    @commands.command(aliases=['info'])
     async def about(self, beep):
         embed = discord.Embed(title="About AxiroALT:", description="This bot was created to do what most "
                                     "bots should do, and then some really weird things")
