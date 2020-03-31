@@ -4,5 +4,6 @@ __pycache__
 discord.log
 .vs
 .DS_Store
+logs
 macOS
 linux
