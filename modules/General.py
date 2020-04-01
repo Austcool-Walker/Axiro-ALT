@@ -76,6 +76,11 @@ class General(commands.Cog, name="General"):
         await ctx.send(embed=embed)
 
     @commands.command()
+    async def avatar(self, ctx, *,  avamember : discord.Member=None):
+        userAvatarUrl = avamember.avatar_url
+        await ctx.send(userAvatarUrl)
+
+    @commands.command()
     async def invite(self, ctx):
         embed = discord.Embed(color=discord.Colour.dark_orange(), title="Are you going to invite me to your server?",
                               description="Invite me by clicking [here](https://discordapp.com/api/oauth2/authorize?client_id=629070628703436811&permissions=8&scope=bot).")

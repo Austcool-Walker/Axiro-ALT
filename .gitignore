@@ -7,3 +7,6 @@ discord.log
 logs
 macOS
 linux
+modules/.DS_Store
+natives/.DS_Store
+natives/darwin/.DS_Store
